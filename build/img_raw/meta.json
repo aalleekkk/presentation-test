@@ -70,5 +70,59 @@
   "artist": "",
   "license": "CC BY-SA 3.0",
   "date": ""
+ },
+ "wanderer": {
+  "title": "Caspar David Friedrich - Wanderer above the sea of fog.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg",
+  "w": 2327,
+  "h": 2980,
+  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Caspar_David_Friedrich\" class=\"extiw\" title=\"w:en:Caspar David Friedrich\"><span title=\"German Romantic landscape painter (1774–1840)\">Caspar David Friedrich</span></a></bdi>",
+  "license": "Public domain",
+  "date": "circa 1817<div style=\"display: none;\">date QS:P571,+1817-00-00T00:00:00Z/9,P1480,Q5727902</div>"
+ },
+ "plum": {
+  "title": "Vincent van Gogh - Bloeiende pruimenboomgaard- naar Hiroshige - Google Art Project.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Bloeiende_pruimenboomgaard-_naar_Hiroshige_-_Google_Art_Project.jpg",
+  "w": 4000,
+  "h": 4755,
+  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Vincent_van_Gogh\" class=\"extiw\" title=\"w:en:Vincent van Gogh\"><span title=\"Dutch painter (1853–1890)\">Vincent van Gogh</span></a></bdi>",
+  "license": "Public domain",
+  "date": "1887<div style=\"display: none;\">date QS:P571,+1887-00-00T00:00:00Z/9</div>"
+ },
+ "elizabeth": {
+  "title": "Elizabeth I (Armada Portrait).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Elizabeth_I_(Armada_Portrait).jpg",
+  "w": 4353,
+  "h": 3467,
+  "artist": "<bdi>Formerly attributed to <a href=\"https://en.wikipedia.org/wiki/en:George_Gower\" class=\"extiw\" title=\"w:en:George Gower\"><span title=\"English painter (1540-1596)\">George Gower</span></a></bdi>",
+  "license": "Public domain",
+  "date": "1588"
+ },
+ "ryoanji": {
+  "title": "RyoanJi-Dry garden.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:RyoanJi-Dry_garden.jpg",
+  "w": 1600,
+  "h": 1067,
+  "artist": "<a href=\"https://en.wikipedia.org/wiki/User:Sdalu\" class=\"extiw\" title=\"en:User:Sdalu\">Stephane D'Alu</a>",
+  "license": "CC BY-SA 3.0",
+  "date": "April 2004 (4 April 2004 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data))"
+ },
+ "kintsugi": {
+  "title": "Hand Pinted Kintsugi Pottery Bowl.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Hand_Pinted_Kintsugi_Pottery_Bowl.jpg",
+  "w": 960,
+  "h": 750,
+  "artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Nettie1988&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Nettie1988 (page does not exist)\">Ruthann Hurwitz</a>",
+  "license": "CC BY-SA 4.0",
+  "date": "2018-11-14"
+ },
+ "graces": {
+  "title": "The Three Graces, by Peter Paul Rubens, from Prado in Google Earth.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Three_Graces,_by_Peter_Paul_Rubens,_from_Prado_in_Google_Earth.jpg",
+  "w": 24620,
+  "h": 30000,
+  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Peter_Paul_Rubens\" class=\"extiw\" title=\"w:en:Peter Paul Rubens\"><span title=\"Flemish painter (1577–1640)\">Peter Paul Rubens</span></a></bdi>",
+  "license": "Public domain",
+  "date": "from 1630 until 1635<div style=\"display: none;\">date QS:P571,+1630-00-00T00:00:00Z/8,P580,+1630-00-00T00:00:00Z/9,P582,+1635-00-00T00:00:00Z/9</div>"
  }
 }
