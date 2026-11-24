@@ -51,6 +51,7 @@ pres.defineSlideMaster({ title: "Pun kadar", background: { color: HEX.ink }, obj
 
 // ---------- helpers ----------
 const meta = JSON.parse(fs.readFileSync(path.join(RAW, "meta.json"), "utf8"));
+function hasRaw(key) { return fs.readdirSync(RAW).some((n) => n.startsWith(key + ".")); }
 function rawPath(key) {
   const f = fs.readdirSync(RAW).find((n) => n.startsWith(key + "."));
   if (!f) throw new Error("missing image " + key);
@@ -104,6 +105,7 @@ const TRANS = {};
 (async () => {
   const gLeft = await gradient("grad_left", 1600, 900, "right", [[0, 0.94], [0.45, 0.78], [0.75, 0.15], [1, 0]]);
   const gBottom = await gradient("grad_bottom", 1600, 900, "down", [[0, 0.55], [0.3, 0.05], [0.55, 0.1], [1, 0.92]]);
+  const gCap = await gradient("grad_cap", 600, 300, "down", [[0, 0], [0.45, 0.55], [1, 0.9]]);
   const gHalfBottom = await gradient("grad_halfbottom", 800, 900, "down", [[0, 0.75], [0.18, 0.15], [0.42, 0.45], [0.58, 0.9], [1, 0.97]]);
 
   const venus169 = await pic("venus", 16, 9, 0.5, 0.5, 1, "169");
@@ -174,6 +176,7 @@ const TRANS = {};
     T(sl, n, { x: M - 0.1, y: 0.35, w: 7, h: 3.4, fontFace: HF, fontSize: 190, italic: true, color: C.gold, objectName: "!!num" + Number(n) });
     T(sl, title, { x: M, y: 3.55, w: 7.3, h: 1.6, fontFace: HF, fontSize: 46, color: C.white, lineSpacingMultiple: 1.0, objectName: "!!q" + Number(n) });
     T(sl, sub, { x: M, y: 5.45, w: 6.6, h: 0.9, fontSize: 17, color: C.ash, lineSpacingMultiple: 1.15 });
+    sl.addImage({ path: gCap, x: ix, y: H - 1.5, w: iw, h: 1.5, altText: "" });
     wall(sl, ix + 0.3, 6.95, iw - 0.5, cap[0], cap[1], cap[2], C.white, undefined);
     TRANS[pres.slides.length] = transKey;
     return sl;
@@ -181,7 +184,7 @@ const TRANS = {};
 
   // 4 — Divider 01 (Morph iz 03: broj raste)
   s = await divider("01", "Objektivna ili subjektivna?", "Postoji li lepota nezavisno od nas — ili je, kako kaže izreka, „u oku posmatrača“?",
-    "plato", 0.5, 0.42, ["Silanion (rimska kopija)", "Platon", "Kapitolski muzeji, Rim"], SEC1, "morph", "!!plato");
+    "plato", 0.5, 0.42, ["Silanion (rimska kopija)", "Platon", "Gliptoteka, Minhen"], SEC1, "morph", "!!plato");
   s.addNotes("Prvo pitanje: da li je lepota objektivna — svojstvo stvari, merljivo i isto za sve — ili subjektivna, zavisna od onoga ko gleda.");
 
   // 5 — Objektivizam
@@ -225,8 +228,17 @@ const TRANS = {};
   s = add("Svetli", SEC1); TRANS[7] = "fade";
   const hx = M + 0.12, hy = 1.0, hw = 3.6, hh = 4.6;
   frame(s, hx, hy, hw, hh, "!!hume_f");
-  s.addImage({ path: await pic("hume", hw, hh, 0.5, 0.4), x: hx, y: hy, w: hw, h: hh, objectName: "!!hume", altText: "Alan Remzi, portret Dejvida Hjuma" });
-  wall(s, hx - 0.12, hy + hh + 0.3, hw + 0.4, "Alan Remzi", "Dejvid Hjum", "1766", C.text);
+  if (hasRaw("hume")) {
+    s.addImage({ path: await pic("hume", hw, hh, 0.5, 0.4), x: hx, y: hy, w: hw, h: hh, objectName: "!!hume", altText: "Alan Remzi, portret Dejvida Hjuma" });
+    wall(s, hx - 0.12, hy + hh + 0.3, hw + 0.4, "Alan Remzi", "Dejvid Hjum", "1766", C.text);
+  } else {
+    s.addShape(pres.shapes.RECTANGLE, { x: hx, y: hy, w: hw, h: hh, fill: { color: C.panel }, line: { color: C.panel, width: 0 }, objectName: "!!hume" });
+    T(s, "1757", { x: hx, y: hy + 0.9, w: hw, h: 1.6, fontFace: HF, fontSize: 80, italic: true, color: C.gold, align: "center" });
+    s.addShape(pres.shapes.LINE, { x: hx + hw / 2 - 0.5, y: hy + 2.75, w: 1.0, h: 0, line: { color: C.gold, width: 0.75 } });
+    T(s, "O MERILU UKUSA", { x: hx, y: hy + 3.0, w: hw, h: 0.4, fontSize: 12, bold: true, charSpacing: 3, color: C.white, align: "center" });
+    T(s, "Of the Standard of Taste", { x: hx, y: hy + 3.45, w: hw, h: 0.4, fontFace: HF, fontSize: 14, italic: true, color: C.ash, align: "center" });
+    wall(s, hx - 0.12, hy + hh + 0.3, hw + 0.4, "Dejvid Hjum", "1711–1776", "škotski filozof", C.text);
+  }
   const qx = 5.3, qw = W - qx - M;
   label(s, "Stanovište 2  ·  subjektivizam", qx, 0.7, qw, C.cinn);
   T(s, "“", { x: qx - 0.1, y: 0.75, w: 1.5, h: 1.6, fontFace: HF, fontSize: 140, color: C.cinn });
@@ -434,7 +446,7 @@ const TRANS = {};
 
   // 18–19 — Vremenska linija (Morph: fokus klizi)
   const TL = [
-    ["willendorf", "pre ~30.000 god.", "Vilendorfska Venera", "Obilje i plodnost: telo kao znak opstanka.", 0.5, 0.5],
+    ["willendorf", "pre ~30.000 god.", "Vilendorfska Venera", "Obilje i plodnost: telo kao znak opstanka.", 0.5, 0.3],
     ["doryphoros", "oko 440. p. n. e.", "Polikleit, Dorifor", "Kanon: idealne proporcije tela izražene brojem.", 0.5, 0.35],
     ["venus", "oko 1485.", "Botičeli, Rođenje Venere", "Renesansa: povratak antičkom idealu sklada.", 0.5, 0.35],
     ["graces", "1630–1635.", "Rubens, Tri gracije", "Barok: puna, raskošna tela, pokret i čulnost.", 0.5, 0.4],

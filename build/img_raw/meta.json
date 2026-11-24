@@ -124,5 +124,26 @@
   "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Peter_Paul_Rubens\" class=\"extiw\" title=\"w:en:Peter Paul Rubens\"><span title=\"Flemish painter (1577–1640)\">Peter Paul Rubens</span></a></bdi>",
   "license": "Public domain",
   "date": "from 1630 until 1635<div style=\"display: none;\">date QS:P571,+1630-00-00T00:00:00Z/8,P580,+1630-00-00T00:00:00Z/9,P582,+1635-00-00T00:00:00Z/9</div>"
+ },
+ "plato": {
+  "title": "Head Platon Glyptothek Munich 548.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Head_Platon_Glyptothek_Munich_548.jpg",
+  "w": 1619,
+  "h": 2251,
+  "artist": "<div class=\"fn value\">\nSilanion</div>",
+  "license": "Public domain",
+  "date": ""
+ },
+ "venus": {
+  "title": "Sandro Botticelli - La nascita di Venere - Google Art Project - edited.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+  "artist": "Sandro Botticelli",
+  "license": "Public domain"
+ },
+ "vitruvian": {
+  "title": "Da Vinci Vitruve Luc Viatour.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Da_Vinci_Vitruve_Luc_Viatour.jpg",
+  "artist": "Leonardo da Vinci (foto: Luc Viatour)",
+  "license": "Public domain"
  }
 }
