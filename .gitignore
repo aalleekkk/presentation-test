@@ -1,0 +1,4 @@
+build/node_modules/
+build/img/
+build/package-lock.json
+*.tmp
