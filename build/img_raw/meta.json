@@ -52,5 +52,23 @@
   "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Claude_Monet\" class=\"extiw\" title=\"w:en:Claude Monet\"><span title=\"French painter (1840–1926)\">Claude Monet</span></a></bdi>",
   "license": "Public domain",
   "date": "1872<div style=\"display: none;\">date QS:P571,+1872-00-00T00:00:00Z/9</div>"
+ },
+ "doryphoros": {
+  "title": "Doryphoros MAN Napoli Inv6011-2.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Doryphoros_MAN_Napoli_Inv6011-2.jpg",
+  "w": 807,
+  "h": 1500,
+  "artist": "derivative work: <a href=\"//commons.wikimedia.org/wiki/User:Tetraktys\" title=\"User:Tetraktys\">tetraktys</a> (<a href=\"//commons.wikimedia.org/wiki/User_talk:Tetraktys\" title=\"User talk:Tetraktys\"><span class=\"signature-talk\">talk</span></a>)",
+  "license": "CC BY 2.5",
+  "date": "2012-02-13 05:00"
+ },
+ "nautilus": {
+  "title": "NautilusCutawayLogarithmicSpiral.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:NautilusCutawayLogarithmicSpiral.jpg",
+  "w": 2240,
+  "h": 1693,
+  "artist": "",
+  "license": "CC BY-SA 3.0",
+  "date": ""
  }
 }
