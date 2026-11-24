@@ -43,5 +43,14 @@
   "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Marcel_Duchamp\" class=\"extiw\" title=\"w:en:Marcel Duchamp\"><span title=\"French painter, sculptor, and chess player (1887–1968)\">Marcel Duchamp</span></a></bdi> / <bdi><a href=\"https://en.wikipedia.org/wiki/en:Alfred_Stieglitz\" class=\"extiw\" title=\"w:en:Alfred Stieglitz\"><span title=\"American photographer (1864–1946)\">Alfred Stieglitz</span></a></bdi>",
   "license": "Public domain",
   "date": "1917<div style=\"display: none;\">date QS:P571,+1917-00-00T00:00:00Z/9</div>"
+ },
+ "impression": {
+  "title": "Monet - Impression, Sunrise.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
+  "w": 5773,
+  "h": 4478,
+  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Claude_Monet\" class=\"extiw\" title=\"w:en:Claude Monet\"><span title=\"French painter (1840–1926)\">Claude Monet</span></a></bdi>",
+  "license": "Public domain",
+  "date": "1872<div style=\"display: none;\">date QS:P571,+1872-00-00T00:00:00Z/9</div>"
  }
 }
