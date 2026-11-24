@@ -34,5 +34,14 @@
   "artist": "<div class=\"fn value\">\nunbekannt, möglicherweise Elisabeth von Stägemann (Schule von Anton Graff)</div>",
   "license": "Public domain",
   "date": "circa 1790<div style=\"display: none;\">date QS:P571,+1790-00-00T00:00:00Z/9,P1480,Q5727902</div>"
+ },
+ "fountain": {
+  "title": "Marcel Duchamp, 1917, Fountain, photograph by Alfred Stieglitz.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Marcel_Duchamp,_1917,_Fountain,_photograph_by_Alfred_Stieglitz.jpg",
+  "w": 1416,
+  "h": 1849,
+  "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Marcel_Duchamp\" class=\"extiw\" title=\"w:en:Marcel Duchamp\"><span title=\"French painter, sculptor, and chess player (1887–1968)\">Marcel Duchamp</span></a></bdi> / <bdi><a href=\"https://en.wikipedia.org/wiki/en:Alfred_Stieglitz\" class=\"extiw\" title=\"w:en:Alfred Stieglitz\"><span title=\"American photographer (1864–1946)\">Alfred Stieglitz</span></a></bdi>",
+  "license": "Public domain",
+  "date": "1917<div style=\"display: none;\">date QS:P571,+1917-00-00T00:00:00Z/9</div>"
  }
 }
