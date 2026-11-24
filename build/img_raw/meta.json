@@ -25,5 +25,14 @@
   "artist": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Hokusai\" class=\"extiw\" title=\"w:en:Hokusai\"><span title=\"Japanese artist (1760-1849)\">Katsushika Hokusai</span></a></bdi>",
   "license": "Public domain",
   "date": "First publication:  between circa 1830 and circa 1832<div style=\"display: none;\">date QS:P571,+1830-00-00T00:00:00Z/8,P1319,+1830-00-00T00:00:00Z/9,P1326,+1832-00-00T00:00:00Z/9,P1480,Q5727902</div>.<br>"
+ },
+ "kant": {
+  "title": "Immanuel Kant (painted portrait).jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Immanuel_Kant_(painted_portrait).jpg",
+  "w": 964,
+  "h": 1388,
+  "artist": "<div class=\"fn value\">\nunbekannt, möglicherweise Elisabeth von Stägemann (Schule von Anton Graff)</div>",
+  "license": "Public domain",
+  "date": "circa 1790<div style=\"display: none;\">date QS:P571,+1790-00-00T00:00:00Z/9,P1480,Q5727902</div>"
  }
 }
